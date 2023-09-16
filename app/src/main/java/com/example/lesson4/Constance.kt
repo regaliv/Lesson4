@@ -5,7 +5,11 @@ object Constance {
     const val DVORNIK_SUELDO = 1000
     const val DIRECTOR_SUELDO = 100000
 
-    const val DIRECTOR="Egor"
-    const val INGINER ="Andrey"
-    const val DVORNIK ="Sergey"
+    const val DIRECTOR="John"
+    const val INGINER ="Bob"
+    const val DVORNIK ="Den"
+
+    const val DIRECTOR_PASSWORD = "1234"
+    const val INGINER_PASSWORD = "5678"
+    const val DVORNIK_PASSWORD = "4321"
 }

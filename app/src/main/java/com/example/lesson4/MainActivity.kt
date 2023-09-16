@@ -24,16 +24,19 @@ class MainActivity : AppCompatActivity() {
                 Constance.DIRECTOR -> {
                     bindingClass.tvResult.visibility=View.VISIBLE
                     val tempText = "Получите ваши ${Constance.DIRECTOR_SUELDO}"
+                    if (bindingClass.edPassword.text.toString()==Constance.DIRECTOR_PASSWORD)
                     bindingClass.tvResult.text = tempText
                 }
                 Constance.INGINER ->{
                     bindingClass.tvResult.visibility=View.VISIBLE
                     val tempText = "Получите ваши ${Constance.INGENER_SUELDO}"
+                    if (bindingClass.edPassword.text.toString()==Constance.INGINER_PASSWORD)
                     bindingClass.tvResult.text = tempText
                 }
                 Constance.DVORNIK -> {
                     bindingClass.tvResult.visibility=View.VISIBLE
                     val tempText = "Получите ваши ${Constance.DVORNIK_SUELDO}"
+                    if (bindingClass.edPassword.text.toString()==Constance.DVORNIK_PASSWORD)
                     bindingClass.tvResult.text = tempText
                 }
                 else ->{
