@@ -19,25 +19,43 @@ class MainActivity : AppCompatActivity() {
 
         bindingClass.btResult.setOnClickListener {
             // Log.d("MyLog2", "Result =  $resultValue")
+            bindingClass.imageView2.visibility=View.VISIBLE
             when(bindingClass.edValue.text.toString()){
 
                 Constance.DIRECTOR -> {
                     bindingClass.tvResult.visibility=View.VISIBLE
                     val tempText = "Получите ваши ${Constance.DIRECTOR_SUELDO}"
-                    if (bindingClass.edPassword.text.toString()==Constance.DIRECTOR_PASSWORD)
-                    bindingClass.tvResult.text = tempText
+                    bindingClass.tvResult.text =
+                    if (bindingClass.editTextTextPassword2.text.toString()==Constance.DIRECTOR_PASSWORD){
+                        tempText
+                    }else{
+                        Constance.test2
+                    }
+
                 }
-                Constance.INGINER ->{
-                    bindingClass.tvResult.visibility=View.VISIBLE
+                Constance.INGINER -> {
+                    bindingClass.tvResult.visibility = View.VISIBLE
                     val tempText = "Получите ваши ${Constance.INGENER_SUELDO}"
-                    if (bindingClass.edPassword.text.toString()==Constance.INGINER_PASSWORD)
-                    bindingClass.tvResult.text = tempText
+                    bindingClass.tvResult.text =
+                        if (bindingClass.editTextTextPassword2.text.toString() == Constance.INGINER_PASSWORD) {
+                            tempText
+
+                        } else {
+                            Constance.test2
+                        }
                 }
                 Constance.DVORNIK -> {
-                    bindingClass.tvResult.visibility=View.VISIBLE
+                    bindingClass.tvResult.visibility = View.VISIBLE
                     val tempText = "Получите ваши ${Constance.DVORNIK_SUELDO}"
-                    if (bindingClass.edPassword.text.toString()==Constance.DVORNIK_PASSWORD)
-                    bindingClass.tvResult.text = tempText
+
+                        if (bindingClass.editTextTextPassword2.text.toString() == Constance.DVORNIK_PASSWORD) {
+                            bindingClass.tvResult.text =  tempText
+                            bindingClass.imageView2.setImageResource(R.drawable.face_co)
+
+                        }
+                        else{
+                            bindingClass.tvResult.text = "Нет такого работника"
+                        }
                 }
                 else ->{
                     bindingClass.tvResult.visibility=View.VISIBLE

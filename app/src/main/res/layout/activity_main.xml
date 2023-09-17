@@ -11,29 +11,29 @@
 
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="276dp"
+        android:autofillHints=""
         android:ems="10"
-        android:hint="Введит имя рабочего"
 
+        android:hint="Введит имя рабочего"
         android:inputType="text"
         android:minHeight="48dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="HardcodedText" />
 
     <EditText
-        android:id="@+id/edPassword"
-
-        android:layout_width="0dp"
-        android:layout_height="90dp"
-        android:layout_marginTop="72dp"
+        android:id="@+id/editTextTextPassword2"
+        android:layout_width="221dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="40dp"
         android:ems="10"
-        android:hint="Введите пароль"
-        android:inputType="number"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        android:hint="Enter password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/edValue"
+        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="@+id/edValue"
         app:layout_constraintTop_toBottomOf="@+id/edValue" />
 
@@ -41,28 +41,40 @@
         android:id="@+id/tvResult"
         android:layout_width="0dp"
         android:layout_height="50dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="44dp"
         android:gravity="center"
         android:text="TextView"
         android:textColor="#EB2AB1"
         android:textSize="20sp"
         android:visibility="invisible"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword2"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edPassword"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2"
         tools:ignore="HardcodedText" />
 
     <Button
         android:id="@+id/btResult"
         android:layout_width="0dp"
         android:layout_height="90dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="24dp"
         android:text="Провести проверку"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvResult"
         tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="216dp"
+        android:layout_height="197dp"
+        android:layout_marginTop="36dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
